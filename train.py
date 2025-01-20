@@ -531,7 +531,7 @@ def train_rgb_ir(hyp, opt, device, tb_writer=None):
 if __name__ == '__main__':
     #python train.py --data data/multispectral/VEDAI1.yaml --cfg models/transformer/yolov5m_Transfusion_VEDAI.yaml --batch-size 2 --epochs 1
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', type=str, default='yolov5mu.pt', help='initial weights path')
+    parser.add_argument('--weights', type=str, default='yolov5lu.pt', help='initial weights path')
     parser.add_argument('--cfg', type=str, default='./models/transformer/yolov5l_Transfusion_FLIR.yaml', help='model.yaml path')
     parser.add_argument('--data', type=str, default='./data/multispectral/FLIR-align-3class.yaml', help='data.yaml path')
     parser.add_argument('--hyp', type=str, default='data/hyp.scratch.yaml', help='hyperparameters path')
