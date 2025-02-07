@@ -398,7 +398,8 @@ if __name__ == '__main__':
     print(opt.data)
     check_requirements()
 
-    p = r"F:\github_repo\ICAFusion-main\VEDAI\labels\test"
+    # p = r"F:\github_repo\ICAFusion-main\VEDAI\labels\test"
+    p = r"/kaggle/working/MICAF/LLVIP/labels/test"
     labels_list = os.listdir(p)
     labels_list.sort()
     if opt.data in ['./data/multispectral/FLIR-align-3class.yaml', './data/multispectral/FLIR-ADAS.yaml', './data/multispectral/VEDAI.yaml']:
